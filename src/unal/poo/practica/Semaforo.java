@@ -14,7 +14,7 @@ import becker.robots.Thing;
  */
 public class Semaforo extends Thing{
     private String[] images = { "growth.png","growthmuerta.png", "growthseca.png" };
-    private int state ;
+    private int state;
     
     public Semaforo(City city, int i, int i1) {
         super(city, i, i1);

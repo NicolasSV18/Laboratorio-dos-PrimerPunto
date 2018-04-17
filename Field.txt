@@ -7,7 +7,6 @@ Harvest a Field
    becker.robots.Thing 6 5
    becker.robots.Thing 5 5
   
-
 # wall
 
    becker.robots.Wall 10 3 Direction.SOUTH

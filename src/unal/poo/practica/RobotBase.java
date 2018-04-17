@@ -2,6 +2,7 @@ package unal.poo.practica;
 
 import becker.robots.*;
 import becker.robots.icons.Icon;
+import unal.poo.practica.Planta;
 import java.awt.Color;
 
 /** 
@@ -17,29 +18,29 @@ public class RobotBase
         
 	public static void main (String[] args) throws InterruptedException{
             //Declarar la creacion de la ciudad
-            objetos = new City("Field.txt");
+            objetos = new City("C:\\Users\\Sebastian\\Documents\\NetBeansProjects\\Laboratorio-dos-PrimerPunto\\Field.txt");
             objetos.showThingCounts(true);
             
             //Direction.NORTH, EAST, SOUTH, WEST
             //Definicion de la ubicacion del robot, Ciudad, posicion, Direccion, Numero things en el bolso.
            
             estudiante = new Drone(objetos,0, 2, Direction.EAST,10);
-            Flor flor = new Flor(objetos, 0, 3);
+            Planta planta = new Planta(objetos, 0, 3,15,15,15,0);
            
             estudiante.move();
-            Semaforo semaforo = new Semaforo(objetos, 0, 6);
+            //Semaforo semaforo = new Semaforo(objetos, 0, 6);
 	    //Mover una interseccion en el sentido al cual este apuntando el objeto.
-            estudiante.move ();
+            estudiante.move();
             
-            Thing t = estudiante.examineThings(new FlorPred()).next();
+            /*Thing t = estudiante.examineThings(new FlorPred()).next();
             if(t instanceof Flor){
                estudiante.pickThing();
-            }
+            }*/
             
             estudiante.move();
-            semaforo.cambiarEstado();
-            Thread.sleep(500);
-            semaforo.cambiarEstado();
+            planta.cambiarEstado();
+            //Thread.sleep(500);
+            //semaforo.cambiarEstado();
            
             
             
