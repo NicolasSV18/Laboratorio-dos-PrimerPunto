@@ -5,10 +5,19 @@
  */
 package unal.poo.practica;
 
+import becker.robots.City;
+import becker.robots.Thing;
+
 /**
  *
  * @author Estudiante
  */
-public class Panel {
+public class Panel extends Thing {
+
+    
+    public Panel(City city, int i, int i1) {
+        super(city, i, i1);
+        setIcon(new Bicon("drone1.png"));
+    }
     
 }

@@ -15,6 +15,14 @@ public class Cultivo extends City {
  
  protected int ancho;
  protected int largo;
+
+    public Cultivo(int i, int i1) {
+        super(i, i1);
+        this.ancho = i;
+        this.largo = i1;
+    }
+ 
+ 
  
  
  
@@ -36,11 +44,9 @@ public class Cultivo extends City {
 
  
  
-    public Cultivo(int ancho, int largo) {
-        super(ancho, largo);
-    }
+   
  
- public void realizarMonitoreo (double temperatura, double humedad){
+ public void realizarMonitoreo (int x,int y,Monitor monitor){
      
  }
  

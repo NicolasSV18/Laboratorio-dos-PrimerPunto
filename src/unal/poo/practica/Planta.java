@@ -29,6 +29,15 @@ public class Planta extends Thing {
        
     }
 
+    public boolean adicionarFertilizante(int cantidad){
+    boolean r = false;
+    if (this.fertilizante + cantidad <= 100 ){
+        r = true;
+        this.fertilizante = this.fertilizante + cantidad;
+    }
+   return r;
+    }
+    
     public double getHumedad() {
         return humedad;
     }

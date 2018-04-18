@@ -14,6 +14,7 @@ import becker.robots.Robot;
  */
 public class Drone extends Robot{
     protected int energia;
+  
     public Drone(City city, int i, int i1, Direction drctn, int i2) {
         super(city, i, i1, drctn, i2);
         setIcon(new Bicon("drone1.png"));
